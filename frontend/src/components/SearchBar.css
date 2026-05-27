@@ -1,0 +1,33 @@
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 8px 14px;
+  min-width: 280px;
+}
+
+.search__label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.search__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  background: transparent;
+  color: var(--color-text);
+}
+
+.search__count {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
