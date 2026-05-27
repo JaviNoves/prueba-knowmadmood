@@ -1,0 +1,25 @@
+server:
+  port: 5000
+
+spring:
+  application:
+    name: similar-products
+
+product-api:
+  base-url: ${PRODUCT_API_BASE_URL:http://localhost:3001}
+  response-timeout: 2s
+  connect-timeout: 1s
+  max-connections: 500
+  detail-concurrency: 8
+  retry:
+    max-attempts: 1
+    backoff: 50ms
+  cache:
+    maximum-size: 10000
+    ttl: 1m
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
