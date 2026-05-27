@@ -1,0 +1,32 @@
+.pdp__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.pdp__back:hover {
+  color: var(--color-text);
+}
+
+.pdp__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 820px) {
+  .pdp__content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.pdp__info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
